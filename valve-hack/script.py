@@ -13,9 +13,9 @@ from paho.mqtt import client as mqtt
 from serial.threaded import LineReader, ReaderThread
 
 MQTT_HOST = getenv('MQTT_HOST', 'eventbus')
-SERIAL_PORT = getenv('SERIAL_PORT', '/dev/ttyACM0')
+SERIAL_PORT = getenv('SERIAL_PORT', '/dev/ttyACM7')
 SERIAL_BAUDRATE = getenv('SERIAL_BAUDRATE', 9600)
-FIELDS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+FIELDS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
 CONFIG = {
     'id': 'valve-hack',
     'title': 'Valve Hack',

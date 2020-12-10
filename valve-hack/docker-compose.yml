@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  valves:
+    image: brewblox/brewblox-misc:valve-hack
+    restart: unless-stopped
+    privileged: true
+    environment:
+      - SERIAL_PORT=/dev/ttyACM0
+      - MQTT_HOST=192.168.1.222
+
